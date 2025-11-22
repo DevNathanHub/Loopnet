@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loopnet Technologies - Software Solutions</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #00ff00; /* Green text for hacker-like feel */
+            font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            background-image: linear-gradient(0deg, transparent 50%, rgba(0, 255, 0, 0.02) 50%), linear-gradient(90deg, transparent 50%, rgba(0, 255, 0, 0.02) 50%);
+            background-size: 100% 2px, 2px 100%;
+            animation: scan 0.1s linear infinite;
+        }
+        .terminal {
+            position: relative;
+            margin: 20px auto;
+            max-width: 820px;
+        }
+        .title-bar {
+            background: #333;
+            color: #00ff00;
+            padding: 5px 10px;
+            border-radius: 10px 10px 0 0;
+            font-size: 0.8em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: inherit;
+        }
+        .buttons {
+            display: flex;
+            gap: 5px;
+        }
+        .button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        .red { background: #ff5f57; }
+        .yellow { background: #ffbd2e; }
+        .green { background: #28ca42; }
+        .container {
+            max-width: 800px;
+            padding: 40px;
+            border: 1px solid #00ff00; /* Green border */
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.7); /* Green glow */
+            animation: flicker 1.5s infinite alternate;
+            border-radius: 0 0 10px 10px;
+        }
+        h1 {
+            color: #00ff00;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        h1::before {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            color: #ff0080;
+            mix-blend-mode: screen;
+            animation: glitch 0.5s infinite;
+            z-index: -1;
+        }
+        h2 {
+            color: #00cc00;
+            font-size: 1.5em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 1em;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        a {
+            color: #00ffff; /* Cyan for links */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .contact-info {
+            margin-top: 40px;
+            border-top: 1px dashed #00cc00;
+            padding-top: 20px;
+        }
+
+        @keyframes flicker {
+            0% { opacity: 1; }
+            100% { opacity: 0.9; }
+        }
+        @keyframes glitch {
+            0%, 100% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(2px, -2px); }
+            60% { transform: translate(-2px, -2px); }
+            80% { transform: translate(2px, 2px); }
+        }
+        @keyframes scan {
+            0% { background-position: 0 0, 0 0; }
+            100% { background-position: 0 2px, 2px 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <div class="title-bar">
+            <span>Loopnet Technologies - Terminal</span>
+            <div class="buttons">
+                <div class="button red"></div>
+                <div class="button yellow"></div>
+                <div class="button green"></div>
+            </div>
+        </div>
+        <div class="container">
+            <h1 data-text="Loopnet Technologies">Loopnet Technologies</h1>
+            <p>Innovation in every line of code.</p>
+
+            <h2>About Us</h2>
+            <p>Loopnet Technologies is a forward-thinking software company specializing in crafting robust and scalable digital solutions. We leverage cutting-edge technologies to solve complex problems and drive business growth.</p>
+
+            <h2>Our Expertise</h2>
+            <ul>
+                <li>Web Application Development</li>
+                <li>Cloud & DevOps Solutions</li>
+                <li>API Design & Integration</li>
+                <li>Data Engineering</li>
+                <li>Custom Software Development</li>
+            </ul>
+
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p>Whatsapp: <a href="https://wa.me/254792648763">+254 792 648763</a></p>
+                <p>Phone: <a href="tel:+254792648763">+254 792 648763</a></p>
+                <p>Email: <a href="mailto:loopnet.technologies@gmail.com">info@loopnet.technologies</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
